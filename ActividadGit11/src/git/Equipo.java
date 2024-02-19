@@ -43,7 +43,23 @@ public class Equipo {
         System.out.println("Jugadores del equipo " + nombre + ":");
         for (String jugador : jugadores) {
             System.out.println(jugador);
+        	}
         }
+        public boolean listasIguales (Equipo segundoEquipo) {
+    		if (this.jugadores.length != segundoEquipo.jugadores.length) {
+    			return false;
+    		}
+    		
+    		for(String otroJugador : segundoEquipo.jugadores) {
+    			if(existeJugador(otroJugador)) {
+    				continue;
+    			}else {
+    				return false;
+    			}
+    		}
+    		
+    		return true;
+
     }
 
 }
