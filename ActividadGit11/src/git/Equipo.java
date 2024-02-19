@@ -68,8 +68,5 @@ public class Equipo {
 		}
 		return false;
 	}
-	private boolean listasIguales(Equipo segundoEquipo) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 }
