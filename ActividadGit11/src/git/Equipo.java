@@ -45,5 +45,15 @@ public class Equipo {
             System.out.println(jugador);
         }
     }
-
+	public boolean equiposIguales (Equipo segundoEquipo) {
+		if (this.nombre.equalsIgnoreCase(segundoEquipo.nombre)
+				&& listasIguales(segundoEquipo)) {
+			return true;
+		}
+		return false;
+	}
+	private boolean listasIguales(Equipo segundoEquipo) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
